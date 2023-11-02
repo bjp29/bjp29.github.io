@@ -1,124 +1,78 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-* {
-  box-sizing: border-box;
-}
-
-body {
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-/* Float four columns side by side */
-.column {
-  float: left;
-  width: 20%;
-  padding: 0 10px;
-}
-
-/* Remove extra left and right margins, due to padding */
-.row {margin: 0 400px;}
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Responsive columns */
-@media screen and (max-width: 600px) {
-  .column {
-    width: 100%;
-    display: block;
-    margin-bottom: 20px;
-  }
-}
-
-/* Style the counter cards */
-.card {
-  padding: 100px;
-  text-align: left;
-}
-</style>
-</head>
-<body>
-
-<div class="row">
-  <div class="column">
-    <div class="card">
-		<div><a href="http://www.reddit.com/"><span>Reddit</span></a></div>
-		<div><a href="http://www.youtube.com/"><span>Youtube</span></a></div>
-		<div><a href="https://tv.youtube.com/"><span>YoutubeTV</span></a></div>
-		<div><a href="https://read.amazon.com/"><span>Kindle Web Reader</span></a></div>
-		<div><a href="https://www.bookfusion.com/bookshelf"><span>Book Fusion</span></a></div>
-		<div><a href="https://twitter.com/"><span>Twitter</span></a></div>
-		<div><a href="http://www.instagram.com/"><span>Instagram</span></a></div>
-		<div><a href="https://updoot.app/app"><span>Reddit Manager</span></a></div>
-    </div>
-  </div>
-
-  <div class="column">
-    <div class="card">
-		<div><a href="https://45.158.186.41/deluge"><span>Deluge</span></a></div>
-		<div><a href="https://iptorrents.com/t"><span>IPTorrents</span></a></div>
-		<div><a href="https://blutopia.cc/torrents"><span>Blutopia</span></a></div>
-		<div><a href="https://www.torrentleech.me/torrents/browse/index"><span>TorrentLeech</span></a></div>
-		<div><a href="https://thegeeks.click/browse.php"><span>The Geeks</span></a></div>
-		<div><a href="https://alpharatio.cc/torrents.php"><span>Alpha Ratio</span></a></div>
-		<div><a href="https://sportscult.org/index.php?page=torrents"><span>Sportscult</span></a></div>
-		<div><a href="https://hd-space.org/index.php"><span>HD-Space</span></a></div>
-		<div><a href="https://www.dropbox.com/home/Torrents"><span>Dropbox Torrents</span></a></div>
-		<div><a href="https://45.158.186.41:300/main/"><span>Seedbox Remote</span></a></div>
-    </div>
-  </div>
-  
-  <div class="column">
-    <div class="card">
-		<div><a href="https://mail.google.com/mail/u/0/#inbox"><span>Gmail</span></a></div>
-		<div><a href="https://drive.google.com/drive/my-drive"><span>Google Drive</span></a></div>
-		<div><a href="https://docs.google.com/spreadsheets/u/0/"><span>Google Sheets</span></a></div>
-		<div><a href="https://docs.google.com/document/u/0/"><span>Google Docs</span></a></div>
-		<div><a href="https://remotedesktop.google.com/access/"><span>Chrome Remote Desktop</span></a></div>
-		<div><a href="https://www.amazon.com/"><span>Amazon</span></a></div>
-		<div><a href="https://www.wunderground.com/hourly/us/tx/el-campo"><span>Weather Underground</span></a></div>
-		<div><a href="https://us.etrade.com/home/welcome-back"><span>E*Trade</span></a></div>
-		<div><a href="https://www.tradingview.com/chart/x7xgXleR/"><span>Trading View</span></a></div>
-		<div><a href="https://www.printables.com/"><span>Printables</span></a></div>
-		<div><a href="https://www.thingiverse.com/"><span>Thingiverse</span></a></div>
-    </div>
-  </div>
-  
-  <div class="column">
-    <div class="card">
-		<div><a href="http://fs01:8096/"><span>Jellyfin</span></a></div>
-		<div><a href="http://fs01:55414/"><span>Urbackup</span></a></div>
-		<div><a href="http://192.168.1.1/"><span>Router</span></a></div>
-		<div><a href="https://192.168.0.1/login.asp"><span>Modem</span></a></div>
-		<div><a href="https://customer.sparklight.com/SecureLogin/Login.aspx"><span>Sparklight</span></a></div>
-		<div><a href="http://octopi.local/"><span>Octopi</span></a></div>
-    </div>
-  </div>
-  
-  <div class="column">
-    <div class="card">
-		<div><a href="https://cfb.guide/"><span>CFB Guide</span></a></div>
-		<div><a href="http://lsufootball.net/tvschedule.htm"><span>CFB Schedule</span></a></div>
-		<div><a href="https://fantasy.espn.com/football/league?leagueId=1015613"><span>ESPN Fantasy Football</span></a></div>
-		<div><a href="https://www.espn.com/nfl/scoreboard"><span>ESPN NFL Scoreboard</span></a></div>
-		<div><a href="https://www.espn.com/college-football/scoreboard"><span>ESPN CFB Scoreboard</span></a></div>
-		<div><a href="https://sports.yahoo.com/college-football/scoreboard/"><span>Yahoo CFB Scoreboard</span></a></div>
-		<div><a href="https://sports.yahoo.com/nfl/scoreboard/"><span>Yahoo NFL Scoreboard</span></a></div>
-		<div><a href="https://506sports.com/"><span>506 Sports</span></a></div>
-		<div><a href="https://gridirongames.com/nfl-weekly-schedule/"><span>Gridiron Games Schedule</span></a></div>
-		<div><a href="https://gridirongames.com/football-pools/nfl-pickem/pool-19092/"><span>Gridiron Games Pickem Pool</span></a></div>
-		<div><a href="https://sportsurge.net/#/groups/0"><span>SportSurge.net</span></a></div>
-		<div><a href="https://sportsurge.io/"><span>SportSurge.io</span></a></div>
-    </div>
-  </div>
-</div>
-
-</body>
+   <head>
+      <link rel="stylesheet" href="style.css" />
+   </head>
+   <body>
+      <div class="row">
+         <div class="col-lg-5-12 col-sm-6 ">
+            <div class='realColumn'>
+               <div><a href="http://www.reddit.com/"><span>Reddit</span></a></div>
+               <div><a href="http://www.youtube.com/"><span>Youtube</span></a></div>
+               <div><a href="https://tv.youtube.com/"><span>YoutubeTV</span></a></div>
+               <div><a href="https://read.amazon.com/"><span>Kindle Web Reader</span></a></div>
+               <div><a href="https://www.bookfusion.com/bookshelf"><span>Book Fusion</span></a></div>
+               <div><a href="https://twitter.com/"><span>Twitter</span></a></div>
+               <div><a href="http://www.instagram.com/"><span>Instagram</span></a></div>
+               <div><a href="https://updoot.app/app"><span>Reddit Manager</span></a></div>
+            </div>
+         </div>
+         <div class="col-lg-5-12 col-sm-6">
+            <div class='realColumn'>
+               <div><a href="https://www.notion.so"><span>Station Ledger</span></a></div>
+               <div><a href="https://mail.google.com/mail/u/0/#inbox"><span>Gmail</span></a></div>
+               <div><a href="https://drive.google.com/drive/my-drive"><span>Google Drive</span></a></div>
+               <div><a href="https://docs.google.com/spreadsheets/u/0/"><span>Google Sheets</span></a></div>
+               <div><a href="https://docs.google.com/document/u/0/"><span>Google Docs</span></a></div>
+               <div><a href="https://remotedesktop.google.com/access/"><span>Chrome Remote Desktop</span></a></div>
+               <div><a href="https://www.amazon.com/"><span>Amazon</span></a></div>
+               <div><a href="https://www.wunderground.com/hourly/us/tx/el-campo"><span>Weather Underground</span></a></div>
+               <div><a href="https://us.etrade.com/home/welcome-back"><span>E*Trade</span></a></div>
+               <div><a href="https://www.tradingview.com/chart/x7xgXleR/"><span>Trading View</span></a></div>
+               <div><a href="https://www.printables.com/"><span>Printables</span></a></div>
+               <div><a href="https://www.thingiverse.com/"><span>Thingiverse</span></a></div>
+            </div>
+         </div>
+         <div class="col-lg-5-12 col-sm-6">
+            <div class='realColumn'>
+               <div><a href="https://45.158.186.41/deluge"><span>Deluge</span></a></div>
+               <div><a href="https://iptorrents.com/t"><span>IPTorrents</span></a></div>
+               <div><a href="https://blutopia.cc/torrents"><span>Blutopia</span></a></div>
+               <div><a href="https://www.torrentleech.me/torrents/browse/index"><span>TorrentLeech</span></a></div>
+               <div><a href="https://alpharatio.cc/torrents.php"><span>Alpha Ratio</span></a></div>
+               <div><a href="https://sportscult.org/index.php"><span>Sportscult</span></a></div>
+               <div><a href="https://thegeeks.click/browse.php"><span>The Geeks</span></a></div>
+               <div><a href="https://hd-space.org/index.php"><span>HD-Space</span></a></div>
+               <div><a href="https://www.dropbox.com/home/Torrents"><span>Dropbox Torrents</span></a></div>
+            </div>
+         </div>
+         <div class="col-lg-5-12 col-sm-6">
+            <div class='realColumn'>
+               <div><a href="http://fs01:8096/"><span>Jellyfin</span></a></div>
+               <div><a href="http://fs01:55414/"><span>Urbackup</span></a></div>
+               <div><a href="http://192.168.1.1/"><span>Router</span></a></div>
+               <div><a href="https://192.168.0.1/login.asp"><span>Modem</span></a></div>
+               <div><a href="https://customer.sparklight.com/SecureLogin/Login.aspx"><span>Sparklight</span></a></div>
+               <div><a href="http://octopi.local/"><span>Octopi</span></a></div>
+            </div>
+         </div>
+         <div class="col-lg-5-12 col-sm-6">
+            <div class='realColumn'>
+               <div><a href="https://cfb.guide/"><span>CFB Guide</span></a></div>
+               <div><a href="https://www.espn.com/college-football/scoreboard"><span>ESPN CFB Scoreboard</span></a></div>
+               <div><a href="https://sports.yahoo.com/college-football/scoreboard/"><span>Yahoo CFB Scoreboard</span></a></div>
+               <div><a href="http://lsufootball.net/tvschedule.htm"><span>CFB Schedule</span></a></div>
+               <div><a href="https://fantasy.espn.com/football/league?leagueId=1015613"><span>ESPN Fantasy Football</span></a></div>
+               <div><a href="https://www.espn.com/nfl/scoreboard"><span>ESPN NFL Scoreboard</span></a></div>
+               <div><a href="https://sports.yahoo.com/nfl/scoreboard/"><span>Yahoo NFL Scoreboard</span></a></div>
+               <div><a href="https://506sports.com/"><span>506 Sports</span></a></div>
+               <div><a href="https://gridirongames.com/nfl-weekly-schedule/"><span>Gridiron Games Schedule</span></a></div>
+               <div><a href="https://gridirongames.com/football-pools/nfl-pickem/pool-19092/"><span>Gridiron Games Pickem Pool</span></a></div>
+               <div><a href="https://sportsurge.net/#/groups/0"><span>SportSurge.net</span></a></div>
+               <div><a href="https://sportsurge.io/"><span>SportSurge.io</span></a></div>
+            </div>
+         </div>
+      </div>
+   </body>
 </html>
+
