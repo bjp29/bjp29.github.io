@@ -26,3 +26,6 @@ a:active {
 	text-decoration: none;
 	color:#777777;
 }
+p {
+	font-size: 0.2em;
+}
