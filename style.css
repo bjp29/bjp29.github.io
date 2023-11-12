@@ -1,5 +1,7 @@
 /* Page body styles */
-body {
+p {
+	font-size: 0.2em;
+}body {
     margin:0; 
 	font-size: 1.5em;
     /*background:#eee;*/
@@ -25,7 +27,4 @@ a:hover {
 a:active {
 	text-decoration: none;
 	color:#777777;
-}
-p {
-	font-size: 0.2em;
 }
