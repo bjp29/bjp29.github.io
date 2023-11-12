@@ -1,7 +1,8 @@
 /* Page body styles */
 p {
 	font-size: 0.2em;
-}body {
+}
+body {
     margin:0; 
 	font-size: 1.5em;
     /*background:#eee;*/
